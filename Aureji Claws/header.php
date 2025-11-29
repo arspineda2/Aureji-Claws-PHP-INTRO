@@ -1,3 +1,15 @@
+<?php
+date_default_timezone_set('Asia/Manila'); //Set timezone to PH to follow current time everytim a user views the page
+$hour = date("H");
+if ($hour < 12) { //IF ELSE... IF or conditional statements
+    $greeting = "Good Morning";
+} elseif ($hour < 18) {
+    $greeting = "Good Afternoon";
+} else {
+    $greeting = "Good Evening";
+}
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,6 +20,7 @@
     </head>
     <body> <!-- Referenced our past IntroWeb Lab Case Study in this Header --->
         <header> 
+            <h2 style="color: #f488a6"><?php echo $greeting; ?></h2> 
             <a href="#"><img src="Logo.png" alt="Aureji Claws Logo" class="logo"></a>
             <div class="Line-separator"></div>
             <nav> <!-- Referenced the navigation part from my PRLM-HandsOn-Mod2 --->
@@ -17,4 +30,5 @@
                 <a href="Feedbacks.php">FEEDBACKS</a>
             </nav>
         </header>
+
         <div class="checkerboard"></div>
