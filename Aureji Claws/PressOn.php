@@ -4,6 +4,17 @@ include 'header.php'; //HEADER
 $po1 = 1300; //VARIABLES 
 $po2 = 1000; //$name = value
 $po3 = 1000; //Numeric Data Type
+
+$day = 'Thursday';
+$offer = match($day){ //MATCH
+    'Friday' => '10% Off on all nail services!',
+    'Saturday' => '5% Off before 11AM!',
+    default => ' Book with a friend! 10% OFF each!'
+};
+
+for ($i = 0; $i < 6; $i++) { // FOR LOOP
+    echo "<span style='color:#f488a6; font-weight:bold; margin: 10px;'>$offer </span>";
+}
 ?>
 
     <section class="pressons">
@@ -26,4 +37,5 @@ $po3 = 1000; //Numeric Data Type
 
 <?php
 include 'footer.php'; //FOOTER
+
 ?>
