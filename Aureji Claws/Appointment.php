@@ -1,4 +1,4 @@
-<!-- PINEDA, ANGEL RAPHAELLE S. | WD 201 | PHP INTRO ACT Started: Nov 28 | -->
+<!-- PINEDA, ANGEL RAPHAELLE S. | WD 201 | PHP INTRO ACT Started: Nov 28 Finished: Nov 29 | -->
 <?php
 include 'header.php'; //HEADER 
 $options = ['Nail Extension','Removal','Add ons'];  //Array List
@@ -10,13 +10,23 @@ $default = "None";  //None or Null
 $latefee = 100; //Numeric or Integer
 $sample = $latefee + $latefee; //Expressions  Operators
 
+$services = ["Nail Extension", "Removal", "Add Ons"];
+$prices = [1300, 100, 200];
+$i = 0; 
 ?> 
 <!-- Page Section to be improved (both html and css) --->
     <section class="appointment">
 
         <div class="appointment-content">
+            <h2>Prices:</h2>
+                <?php while ($i < count($services)): ?> <!--Used WHILE LOOP to display services and prices -->
+                    <p style="color:#f488a6; font-weight:bold;">
+                        <?php echo $services[$i] . " - ₱" . $prices[$i] . " to 1500"; ?> <!--Made use of CONCATENATION between a string and a php statement -->
+                    </p>
+                    <?php $i++; ?>
+                <?php endwhile; ?>
+            <br>
             <h1>Booking: Terms and Conditions</h1>
-                <br>
                     <p>To ensure a smooth and organized booking experience for all clients, please read the following terms and conditions before scheduling an appointment.</p>
                         <ul>
                             <li>All bookings are strictly per person only. No companions are allowed if the appointment is for one only.</li>
