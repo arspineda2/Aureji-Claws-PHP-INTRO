@@ -1,4 +1,4 @@
-<!-- PINEDA, ANGEL RAPHAELLE S. | WD 201 | PHP INTRO ACT Started: Nov 28 | -->
+<!-- PINEDA, ANGEL RAPHAELLE S. | WD 201 | PHP INTRO ACT Started: Nov 28 | Finished: Nov 29 -->
 <?php
 include 'header.php'; //HEADER 
 $storename = "Aureji Claws"; //VARIABLE -> String Data Type
