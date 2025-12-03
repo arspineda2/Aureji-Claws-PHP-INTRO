@@ -28,7 +28,9 @@ if ($hour < 12) { //IF ELSE... IF or conditional statements
                 <a href="About.php">ABOUT</a>
                 <a href="Appointment.php">APPOINTMENT</a>
                 <a href="Feedbacks.php">FEEDBACKS</a>
+                <a href="Stocks.php">PRODUCT AVAILABILITY</a>
             </nav>
         </header>
 
         <div class="checkerboard"></div>
+
