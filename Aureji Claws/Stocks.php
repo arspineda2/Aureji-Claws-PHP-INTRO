@@ -38,6 +38,26 @@ function get_tax_due(float $price, int $quantity, int $tax = 0): float
 }
 ?>
 
+<style>
+    /*=====PRODUCT AVAILABILITY CSS=====*/
+
+table {
+  border-collapse: collapse; 
+  width: 50%;
+  margin: 20px auto;
+}
+
+th, td {
+  border: 1px solid black; 
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f5dfdf;
+}
+</style>
+
 <section class="presson">
     <table>
         <thead>
@@ -77,4 +97,5 @@ function get_tax_due(float $price, int $quantity, int $tax = 0): float
 
 <?php
 include 'footer.php'; //FOOTER
+
 ?>
